@@ -8,7 +8,7 @@ const brandSchema = new mongoose.Schema(
       required: [true, "Brand required"],
       unique: [true, "Brand must be unique"],
       minlength: [3, "Too short brand name"],
-      maxLength: [32, "Too long brand name"],
+      maxlength: [32, "Too long brand name"],
     },
     slug: {
       type: String,
